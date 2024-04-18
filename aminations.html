@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        background-color: orange;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+
+    @keyframes spin {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    .solid-spinner {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 5px solid white;
+        border-top-color: transparent;
+        animation: spin 1s linear infinite;
+    }
+
+    .dotted-spinner {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 5px dotted white;
+        border-top-color: transparent;
+        animation: spin 1s linear infinite;
+    }
+</style>
+
+<body>
+    <div class="solid-spinner"></div>
+    <h4>spinner using only html and css</h4>
+    <div class="dotted-spinner"></div>
+    <h4>spinner using css animation</h4>
+</body>
+
+</html>
